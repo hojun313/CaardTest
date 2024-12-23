@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfycfk57sckb1"]
+
+[ext_resource type="Script" path="res://프리팹/카드.gd" id="1_un853"]
+[ext_resource type="Texture2D" uid="uid://cq38tr3k0do84" path="res://card addon/assets/card_empty.png" id="2_o3ie1"]
+
+[node name="카드" type="Control"]
+custom_minimum_size = Vector2(168, 240)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 168.0
+offset_bottom = 240.0
+script = ExtResource("1_un853")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 100.0
+offset_bottom = 150.0
+texture = ExtResource("2_o3ie1")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

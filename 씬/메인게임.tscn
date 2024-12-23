@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2b4urcnnyw4i"]
+
+[ext_resource type="PackedScene" uid="uid://dfycfk57sckb1" path="res://프리팹/카드.tscn" id="1_gv1hd"]
+[ext_resource type="PackedScene" uid="uid://7o8niculd1yx" path="res://매니저/게임매니저.tscn" id="2_m0q0y"]
+
+[node name="게임화면" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="게임매니저" parent="CanvasLayer/Control" instance=ExtResource("2_m0q0y")]
+
+[node name="FieldCardDropzone" type="HBoxContainer" parent="CanvasLayer/Control/게임매니저"]
+offset_top = 270.0
+offset_right = 1920.0
+offset_bottom = 810.0
+alignment = 1
+
+[node name="카드" parent="CanvasLayer/Control/게임매니저/FieldCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드2" parent="CanvasLayer/Control/게임매니저/FieldCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드3" parent="CanvasLayer/Control/게임매니저/FieldCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드4" parent="CanvasLayer/Control/게임매니저/FieldCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드5" parent="CanvasLayer/Control/게임매니저/FieldCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="HandCardDropzone" type="HBoxContainer" parent="CanvasLayer/Control/게임매니저"]
+custom_minimum_size = Vector2(1920, 270)
+offset_top = 810.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+alignment = 1
+
+[node name="카드" parent="CanvasLayer/Control/게임매니저/HandCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드2" parent="CanvasLayer/Control/게임매니저/HandCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드3" parent="CanvasLayer/Control/게임매니저/HandCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드4" parent="CanvasLayer/Control/게임매니저/HandCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2
+
+[node name="카드5" parent="CanvasLayer/Control/게임매니저/HandCardDropzone" instance=ExtResource("1_gv1hd")]
+layout_mode = 2

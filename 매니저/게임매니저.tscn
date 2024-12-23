@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://7o8niculd1yx"]
+
+[ext_resource type="Script" path="res://스크립트/게임매니저.gd" id="1_l454m"]
+
+[node name="게임매니저" type="Node"]
+script = ExtResource("1_l454m")

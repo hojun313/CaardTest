@@ -1,0 +1,91 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2b4urcnnyw4i"]
+
+[ext_resource type="Script" path="res://card addon/addons/godot_card_layout/layouts/hand_layout/gcard_hand_layout.gd" id="1_p04tv"]
+[ext_resource type="Texture2D" uid="uid://cdmxt8mu6jqhn" path="res://card addon/example/resource/sprites/card_example.svg" id="2_mcjft"]
+
+[node name="게임화면" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Table" type="Node2D" parent="CanvasLayer"]
+position = Vector2(960, 540)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Table"]
+
+[node name="Table" type="Node2D" parent="CanvasLayer/Table"]
+position = Vector2(960, 540)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Table/Table"]
+
+[node name="Table" type="Node2D" parent="CanvasLayer/Table/Table"]
+position = Vector2(960, 540)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Table/Table/Table"]
+
+[node name="Cardlayout" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GCardHandLayout" type="Control" parent="Cardlayout"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_p04tv")
+
+[node name="Card" type="TextureRect" parent="Cardlayout/GCardHandLayout"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 100.0
+pivot_offset = Vector2(40, 0)
+texture = ExtResource("2_mcjft")
+expand_mode = 1
+
+[node name="Card3" type="TextureRect" parent="Cardlayout/GCardHandLayout"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 100.0
+pivot_offset = Vector2(40, 0)
+texture = ExtResource("2_mcjft")
+expand_mode = 1
+
+[node name="Card4" type="TextureRect" parent="Cardlayout/GCardHandLayout"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 100.0
+pivot_offset = Vector2(40, 0)
+texture = ExtResource("2_mcjft")
+expand_mode = 1
+
+[node name="Card5" type="TextureRect" parent="Cardlayout/GCardHandLayout"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 100.0
+pivot_offset = Vector2(40, 0)
+texture = ExtResource("2_mcjft")
+expand_mode = 1
+
+[node name="Card6" type="TextureRect" parent="Cardlayout/GCardHandLayout"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 100.0
+pivot_offset = Vector2(40, 0)
+texture = ExtResource("2_mcjft")
+expand_mode = 1
+
+[node name="Card7" type="TextureRect" parent="Cardlayout/GCardHandLayout"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 100.0
+pivot_offset = Vector2(40, 0)
+texture = ExtResource("2_mcjft")
+expand_mode = 1
+
+[node name="Card2" type="TextureRect" parent="Cardlayout/GCardHandLayout"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 100.0
+pivot_offset = Vector2(40, 0)
+texture = ExtResource("2_mcjft")
+expand_mode = 1
